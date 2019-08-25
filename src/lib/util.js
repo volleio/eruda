@@ -4073,25 +4073,12 @@ export var Class = _.Class = (function (exports) {
         delete methods.className;
         var ctor;
 
-        if (isMiniProgram) {
-            ctor = function ctor() {
-                var args = toArr(arguments);
-                return this.initialize
-                    ? this.initialize.apply(this, args) || this
-                    : this;
-            };
-        } else {
-            ctor = new Function(
-                'toArr',
-                'return function ' +
-                    className +
-                    '()' +
-                    '{' +
-                    'var args = toArr(arguments);' +
-                    'return this.initialize ? this.initialize.apply(this, args) || this : this;' +
-                    '};'
-            )(toArr);
-        }
+        ctor = function ctor() {
+            var args = toArr(arguments);
+            return this.initialize
+                ? this.initialize.apply(this, args) || this
+                : this;
+        };
 
         inherits(ctor, parent);
         ctor.prototype.constructor = ctor;
