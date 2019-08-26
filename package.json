@@ -5,7 +5,8 @@
   "main": "eruda.js",
   "scripts": {
     "ci": "npm run lint && npm run test && npm run build",
-    "build": "webpack --config script/webpack.dev.js && webpack --config script/webpack.release.js",
+    "build": "webpack --config script/webpack.dev.js && webpack --config script/webpack.release.js && npm run copyBuild",
+    "copyBuild": "cpx eruda.* ./test/assets",
     "cov": "npm run test && remap-istanbul -i coverage/coverage-final.json -o coverage/coverage-remapped.json -t json && node script/coverage",
     "dev": "webpack-dev-server --config script/webpack.dev.js --host 0.0.0.0",
     "test": "karma start",
@@ -19,7 +20,6 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run ci"
     }
   },
   "repository": {
@@ -44,6 +44,7 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
     "copy": "^0.3.1",
+    "cpx": "^1.5.0",
     "css-loader": "^0.28.7",
     "draggabilly": "^2.1.1",
     "eslint": "^6.1.0",

@@ -12,3 +12,4 @@ stringifyWorker.js.map
 /src/**/*.js.map
 npm-debug.log
 package-lock.json
+/test/assets
