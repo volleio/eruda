@@ -105,6 +105,10 @@ export default class NavBar extends Emitter {
       height: height,
       lineHeight: height
     })
+    $el.find('.eruda-close-btn').css({
+      height: height,
+      marginTop: height * -1 
+    })
 
     this._resetBottomBar()
   }

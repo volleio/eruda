@@ -54,9 +54,11 @@ $item-width: 69px;
       background-color: rgb(33, 150, 243);
       overflow: hidden;
       cursor: pointer;
+      transition: all $anim-duration;
     }
     .icon-close {
-      font-size: 16px;
+      font-size: 24px;
+      font-weight: bold;
       color: #FFF;
       position: absolute;
       left: 50%;
