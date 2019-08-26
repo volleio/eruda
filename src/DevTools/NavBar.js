@@ -7,10 +7,15 @@ export default class NavBar extends Emitter {
     this._style = evalCss(require('./NavBar.scss'))
 
     this._$el = $el
-    $el.html('<div class="eruda-bottom-bar"></div>')
+    $el.html('<div class="eruda-bottom-bar"></div><div class="eruda-close-btn"><span class="eruda-icon-close"></span></div>')
     this._$bottomBar = $el.find('.eruda-bottom-bar')
+    this._$closeBtn = $el.find('.eruda-close-btn')
     this._len = 0
     this._height = 55
+
+    this._$el.on('click', '.eruda-close-btn', () => {
+      window.eruda.hide()
+    })
 
     this._bindEvent()
   }

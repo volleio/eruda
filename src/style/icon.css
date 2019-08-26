@@ -72,3 +72,7 @@
 .icon-error:before {
   content: '\e6ce';
 }
+
+.icon-close:before {
+  content: '\00d7'; 
+}

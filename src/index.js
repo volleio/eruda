@@ -39,7 +39,7 @@ module.exports = {
     this._initContainer(container, useShadowDom)
     this._initStyle()
     this._initDevTools()
-    this._initEntryBtn()
+    //this._initEntryBtn()
     this._initSettings()
     this._initTools(tool)
     this._registerListener()
@@ -215,7 +215,7 @@ module.exports = {
 
     devTools.add(settings)
 
-    this._entryBtn.initCfg(settings)
+    //this._entryBtn.initCfg(settings)
     devTools.initCfg(settings)
   },
   _initTools(

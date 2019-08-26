@@ -24,6 +24,9 @@ $item-width: 69px;
       text-align: center;
       text-transform: capitalize;
       transition: all $anim-duration;
+      &:nth-last-child(3) {
+        margin-right: 30px;
+      }
       &:active {
         background: $gray-dark;
         opacity: 0.5;
@@ -41,6 +44,24 @@ $item-width: 69px;
       position: absolute;
       bottom: 0;
       left: 0;
+    }
+    .close-btn {
+      position: fixed;
+      height: 30px;
+      width: 30px;
+      margin-top: -30px;
+      right: 0;
+      background-color: rgb(33, 150, 243);
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .icon-close {
+      font-size: 16px;
+      color: #FFF;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
     }
   }
 }
