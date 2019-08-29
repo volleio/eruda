@@ -135,7 +135,7 @@ export default class DevTools extends Emitter {
   initCfg(settings) {
     const cfg = (this.config = Settings.createCfg('dev-tools', {
       transparency: 0.95,
-      displaySize: 80,
+      displaySize: 60,
       tinyNavBar: !isMobile(),
       activeEruda: false,
       navBarBgColor: '#2196f3'

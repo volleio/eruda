@@ -21006,7 +21006,7 @@ var DevTools = function (_Emitter) {
 
       var cfg = this.config = _Settings2.default.createCfg('dev-tools', {
         transparency: 0.95,
-        displaySize: 80,
+        displaySize: 60,
         tinyNavBar: !(0, _util.isMobile)(),
         activeEruda: false,
         navBarBgColor: '#2196f3'
@@ -30534,7 +30534,7 @@ exports = module.exports = __webpack_require__(6)(false);
 
 
 // module
-exports.push([module.i, ".eruda-container {\n  pointer-events: none;\n  will-change: transform;\n  position: fixed;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  z-index: 100000;\n  color: #263238;\n  -webkit-transform: translateZ(0);\n          transform: translateZ(0);\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-seri;\n  font-size: 14px;\n  direction: ltr; }\n  .eruda-container * {\n    -webkit-box-sizing: border-box;\n            box-sizing: border-box;\n    pointer-events: all;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n    -webkit-tap-highlight-color: transparent;\n    -webkit-text-size-adjust: none; }\n  .eruda-container ul {\n    list-style: none;\n    padding: 0;\n    margin: 0; }\n  .eruda-container h1,\n  .eruda-container h2,\n  .eruda-container h3,\n  .eruda-container h4 {\n    margin: 0; }\n\n.eruda-hidden {\n  display: none; }\n\n.eruda-blue {\n  color: #2196f3; }\n\n.eruda-red {\n  color: #f44336; }\n\n.eruda-green {\n  color: #009688; }\n", ""]);
+exports.push([module.i, ".eruda-container {\n  pointer-events: none;\n  will-change: transform;\n  position: fixed;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  z-index: 100000;\n  color: #263238;\n  -webkit-transform: translateZ(0);\n          transform: translateZ(0);\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-seri;\n  font-size: 14px;\n  direction: ltr; }\n  .eruda-container * {\n    -webkit-box-sizing: border-box;\n            box-sizing: border-box;\n    pointer-events: all;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n    -webkit-tap-highlight-color: transparent;\n    -webkit-text-size-adjust: none; }\n    .eruda-container *::-webkit-scrollbar {\n      display: none; }\n  .eruda-container ul {\n    list-style: none;\n    padding: 0;\n    margin: 0; }\n  .eruda-container h1,\n  .eruda-container h2,\n  .eruda-container h3,\n  .eruda-container h4 {\n    margin: 0; }\n\n.eruda-hidden {\n  display: none; }\n\n.eruda-blue {\n  color: #2196f3; }\n\n.eruda-red {\n  color: #f44336; }\n\n.eruda-green {\n  color: #009688; }\n", ""]);
 
 // exports
 

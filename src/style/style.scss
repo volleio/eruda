@@ -21,6 +21,10 @@
     user-select: none;
     -webkit-tap-highlight-color: transparent;
     -webkit-text-size-adjust: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
   ul {
     list-style: none;
